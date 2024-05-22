@@ -5,13 +5,13 @@
     font-family: sans-serif;
 }
 
-body{
-    background-color: rgb(185, 22, 54);
+body {
+    background-image: url(background.jpg);
 }
 
-  
+
 .container {
-    background-color: rgb(196, 187, 189);
+    background-color: rgb(255, 255, 255, 50%);
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -25,7 +25,7 @@ body{
     vertical-align: top;
     border-width: 10px;
     margin: 1rem 1rem;
-    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px;  
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px;
     text-align: center;
     display: inline-block;
 }
@@ -39,151 +39,102 @@ body{
     text-align: center;
 }
 
+.details {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
 
-
-.detailsYellow {
+.Yellow {
     background-color: rgb(230, 192, 98);
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
-.detailsRed {
+.Red {
     background-color: rgb(230, 98, 98);
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
-.detailsLight {
+.Light {
     background-color: rgb(98, 199, 230);
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
-.detailsPurple {
+.Purple {
     background-color: rgb(138, 98, 230);
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
-.detailsGray {
+.Gray {
     background-color: rgb(165, 165, 165);
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
-.detailsPink {
+.Pink {
     background-color: rgb(221, 96, 138);
-    width: 100%;
-    text-align: center;
-    padding-top: 5px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
 }
 
-.type1Electric {
+.type1{
     color: white;
     text-shadow: 2px 2px 4px #000000;
     border-style: solid;
     width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.Electric {
     background: rgb(189, 189, 72);
-    border-radius: 20px;
 }
 
-.type1Fire {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Fire {
     background: rgb(189, 35, 24);
-    border-radius: 20px;
 }
 
-.type1Psychic {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Psychic {
     background: rgb(235, 111, 179);
-    border-radius: 20px;
 }
 
-.type1Dark {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Dark {
     background: rgb(80, 70, 69);
-    border-radius: 20px;
 }
 
-.type2Flying {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Flying {
     background: rgb(135, 207, 230);
-    border-radius: 20px;
 }
 
-.type2Ghost {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Ghost {
     background: rgb(135, 145, 230);
-    border-radius: 20px;
 }
 
-.type1Steel {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Steel {
     background: rgb(105, 138, 175);
-    border-radius: 20px;
 }
 
-.type2Rock {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
-    border-style: solid;
-    width: auto;
+.Rock {
     background: rgb(155, 142, 118);
-    border-radius: 20px;
 }
 
-.buttons{
+.buttons {
     text-align: center;
+    padding: 1rem;
 }
 
 .name {
     color: azure;
     text-shadow: 2px 2px 4px #000000;
+    padding-top: 10px;
 }
 
 .type {
     color: azure;
     text-shadow: 2px 2px 4px #000000;
+    display: inline-block;
 }
 
 .desc {
     color: azure;
     text-shadow: 2px 2px 4px #000000;
+    margin: 1rem;
 }
 
 .add {
@@ -194,7 +145,7 @@ body{
     text-align: center;
     width: auto;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     background: rgb(39, 139, 221);
     border-radius: 20px;
 }
@@ -212,7 +163,7 @@ body{
     text-align: center;
     width: auto;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     background: rgb(197, 63, 39);
     border-radius: 20px;
 }
