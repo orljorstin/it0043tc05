@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(background.png);
+    justify-content: center;
+    background-size: cover;
+}
+
+.container {
+    background-image: url(containerbg.png);
+    background-size: cover;
+    background-position: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+p{
+    display: none;
+}
+
+.pokeball{
+    display: none;
+}
+
+.box{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    border-width: 10px;
+    margin: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px;
+}
+
+img{
+    width: 250px;
+}
+
+.green{
+    background-color: #50783a;
+}
+
+.red{
+    background-color: #d43e3e;
+}
+
+.blue{
+    background-color: #3a5878;
+}
+
+.yellow{
+    background-color: #d1ce31;
+}
+
+.wood{
+    background-color: burlywood;
+}
+
+.pink{
+    background-color: rgb(243, 146, 162);
+}
+
+.brown{
+    background-color: rgb(145, 91, 22);
+}
+
+@media (max-width: 1010px){
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box:hover{
+        background-image: url(hoverbg.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: ease-in;
+        transition-duration: 0.5s;
+    }
+    img{
+        width: 50px;
+    }
+    p{
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: aliceblue;
+        text-shadow: 2px 2px 4px black;
+    }
+    .pokeball{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 450px){
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        text-align: center;
+        display: block;
+    }
+    img{
+        width: 200px;
+    }
+    .pokeball{
+        display: none;
+    }
+    p{
+        display: block;
+    }
+}
