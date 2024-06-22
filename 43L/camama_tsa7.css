@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: ease 0.2s;
+}
+
+body {
+    background-color: lavender;
+}
+
+h1 {
+    font-family: "Gloria Hallelujah";
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    height: fit-content;
+    background-color: purple;
+    color: white;
+    padding: 5px;
+}
+
+.logo {
+    margin: -20px;
+}
+
+.nlist {
+    display: flex;
+}
+
+.nitem {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.nlink {
+    color: white;
+    text-decoration: none;
+}
+
+.active,
+.nlink:hover {
+    color: rgb(214, 214, 0);
+    font-size: 1.05rem;
+    transition: ease 0.2s;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+main .container {
+    display: grid;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.main-picture {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.main-pic {
+    width: 100%;
+    outline: 10px ridge rgb(129, 95, 8);
+}
+
+.header-block,
+.home-header {
+    background-color: rgb(214, 214, 0);
+    outline: 2px solid black;
+    height: max-content;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    justify-content: center;
+    text-align: center;
+}
+
+.about {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 35px;
+    margin-top: -10px;
+}
+
+.seasons {
+    grid-column: 3;
+    grid-row: 1/span 4;
+    height: fit-content;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: 5px;
+}
+
+.seasons-list {
+    text-align: center;
+}
+
+.season-item {
+    list-style: none;
+}
+
+.season-pics {
+    width: 100%;
+}
+
+.season-group {
+    padding-bottom: 30px;
+}
+
+.season-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Roboto mono";
+}
+
+.characters {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.characters-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+    justify-content: space-around;
+}
+
+.character-item {
+    list-style: none;
+}
+
+.character-pics {
+    width: 100%;
+}
+
+.character-group {
+    padding-bottom: 30px;
+}
+
+.character-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Roboto mono";
+}
+
+.episodes {
+    grid-column: 1/3;
+    grid-row: 4;
+    align-content: center;
+}
+
+.episodes-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.episode-item {
+    list-style: none;
+}
+
+.episode-pics {
+    width: 100%;
+}
+
+.episode-group {
+    padding-bottom: 30px;
+    width: 40%;
+}
+
+.episode-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-family: "Roboto mono";
+}
+
+.view-more {
+    align-items: center;
+    cursor: pointer;
+    outline: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: purple;
+    border-color: purple;
+}
+
+.view-more:hover {
+    color: #fff;
+    background-color: rgb(214, 214, 0);
+    border-color: rgb(214, 214, 0);
+}
+
+@media (max-width: 1050px) {
+    main .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seasons {
+        grid-column: 1;
+        grid-row: 3;
+        outline: none;
+        width: 100%;
+    }
+
+    .seasons-list {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .season-group{
+        width: 40%;
+    }
+
+    .about{
+        grid-column: 1;
+    }
+
+    .characters{
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .character-group{
+        width: 40%;
+    }
+
+    .episodes{
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
+
+@media (max-width: 700px) {
+    nav .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seasons-list {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .season-group{
+        width: 100%;
+    }
+
+    .character-group{
+        width: 100%;
+    }
+
+    .episode-group{
+        width: 100%;
+    }
+}
