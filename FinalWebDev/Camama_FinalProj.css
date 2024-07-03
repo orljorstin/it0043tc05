@@ -610,7 +610,7 @@ label {
     width: 55px;
 }
 
-.visr{
+.visr {
     width: fit-content;
 }
 
@@ -682,68 +682,70 @@ label {
         gap: 5px;
     }
 
-    .banner{
+    .banner {
         width: 90vw;
     }
-    
-    .box{
+
+    .box {
         font-size: 3rem;
     }
 
-    #name{
+    #name {
         font-size: 4rem;
     }
 
-    .dl-cv, .visitrep{
+    .dl-cv,
+    .visitrep {
         width: 200px;
     }
-    .about-circle{
+
+    .about-circle {
         width: 80vw;
     }
 }
 
-@media (max-width: 465px){
-    .sites{
+@media (max-width: 465px) {
+    .sites {
         width: 90vw;
     }
 }
 
-@media (max-width: 420px){
-    #contact-form{
+@media (max-width: 420px) {
+    #contact-form {
         width: 90vw;
     }
 }
 
-@media (max-width: 390px){
-    .about-details{
+@media (max-width: 390px) {
+    .about-details {
         width: 80vw;
     }
 
-    .box{
+    .box {
         margin-left: 70px;
     }
-    
-    .main-img{
+
+    .main-img {
         min-width: 250px;
     }
 
-    .deets-text{
+    .deets-text {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 350px){
-    .header{
+@media (max-width: 350px) {
+    .header {
         width: 90vw;
     }
 
-    .nlink{
+    .nlink {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 425px){
-    .box{
+@media (max-width: 425px) {
+    .box {
         margin-left: 85px;
     }
 }
