@@ -702,7 +702,7 @@ label {
     }
 }
 
-@media (max-width: 465px){
+@media (max-width: 425px){
     .sites{
         width: 90vw;
     }
