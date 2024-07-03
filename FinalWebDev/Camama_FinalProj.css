@@ -744,7 +744,7 @@ label {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     .box {
         margin-left: 85px;
     }
