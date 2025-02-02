@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Valentine Surprise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .container {
+            display: none;
+        }
+
+        .container.show {
+            display: block;
+        }
+
+        .message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 40px;
+            font-size: 18px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        #no-button {
+            position: absolute;
+            transition: all 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- 404 Page -->
+    <div id="error-page">
+        <h1>404 - Page Not Found</h1>
+        <button id="reload-button">Reload</button>
+    </div>
+
+    <!-- Valentine Page -->
+    <div id="valentine-page" class="container">
+        <div class="message">Will you be my Valentine?</div>
+        <div class="buttons">
+            <button id="yes-button">Yes</button>
+            <button id="no-button">No</button>
+        </div>
+    </div>
+
+    <!-- Yes Response Page -->
+    <div id="yes-page" class="container">
+        <div class="message">Yey! It's a date! See u! Mwa Mwa :*</div>
+    </div>
+
+    <script>
+        // Show Valentine page when reload button is clicked
+        document.getElementById('reload-button').addEventListener('click', function() {
+            document.getElementById('error-page').style.display = 'none';
+            document.getElementById('valentine-page').classList.add('show');
+        });
+
+        // Relocate the "No" button randomly within the whole page
+        document.getElementById('no-button').addEventListener('mouseover', function() {
+            const bodyRect = document.body.getBoundingClientRect();
+            const buttonRect = this.getBoundingClientRect();
+
+            const maxX = bodyRect.width - buttonRect.width;
+            const maxY = bodyRect.height - buttonRect.height;
+
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+
+            this.style.left = `${randomX}px`;
+            this.style.top = `${randomY}px`;
+        });
+
+        // Redirect to the "Yes" page when "Yes" button is clicked
+        document.getElementById('yes-button').addEventListener('click', function() {
+            document.getElementById('valentine-page').classList.remove('show');
+            document.getElementById('yes-page').classList.add('show');
+        });
+    </script>
+</body>
+</html>
